@@ -24,7 +24,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
-	}
+	} 
 	@Override
 	protected void configure(HttpSecurity http)throws Exception {
 		http.authorizeRequests()
