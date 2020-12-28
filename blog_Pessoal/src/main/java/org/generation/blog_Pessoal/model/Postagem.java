@@ -30,6 +30,8 @@ public class Postagem {
 	@NotNull
 	@Size(min = 10, max = 500)
 	private String texto;
+	
+	private String imagem;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
@@ -77,5 +79,15 @@ public class Postagem {
 	public void setTema(Tema tema) {
 		this.tema = tema;
 	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
+	}
+	
+	
 
 }
